@@ -1,0 +1,45 @@
+body{
+	background-color : #FFFEF1;
+}
+
+img.logo{
+	width: 150px;
+}
+
+img.logo:hover{
+	width: 150px;
+	text-shadow: 2px 1px 14px rgba(121,86,8,0.72);
+}
+
+.menu{
+	color: #4D4817;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.menu:hover{
+	color: #12120E;
+	text-shadow:-1px 4px 12px rgba(0,0,0,0.83) ;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.main{
+	padding: 30px;
+	border-radius : 10px;
+	background-color: #e0d8cc;
+}
+
+.border{
+	padding-bottom :4px;
+}
+
+
+hr.new5 {
+  border-top:5px dashed #000000;
+}
+
+.card-image{
+	height: 50%;
+	width: 30%;
+}
