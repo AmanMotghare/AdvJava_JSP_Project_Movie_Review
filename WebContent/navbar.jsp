@@ -23,6 +23,9 @@
 		      <input class="form-control me-2" type="search" placeholder="Movie / TV-Series" aria-label="Search">
 		      <button class="btn btn-outline-dark" type="submit">Search</button>
 		    </form>
+		    <div class="d-flex">
+    			<a class="nav-link menu" href="loginAdmin.jsp">Login</a>
+  			</div>
 		  </div>
 		</nav>
 	</div>

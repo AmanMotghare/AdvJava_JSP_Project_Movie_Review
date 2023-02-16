@@ -34,6 +34,17 @@ img.logo:hover{
 	padding-bottom :4px;
 }
 
+.admin-bg-image{
+	
+	background-image: url("imgs/admin_bg.png");
+	
+}
+
+.admin-card{
+	border-radius: 15px;
+	background-color: #ebdbc4;
+}
+
 
 hr.new5 {
   border-top:5px dashed #000000;

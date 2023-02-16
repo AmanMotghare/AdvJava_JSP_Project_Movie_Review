@@ -5,12 +5,17 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>HOMEPAGE || MOVIE REVIEWER</title>
+<title>Critique It !</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<title>Bootstrap Example</title>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
 </head>
 <body class="container">
 
