@@ -40,7 +40,7 @@ pageEncoding="ISO-8859-1"%>
         </div>
         
         <div class="col col-md-8 col-sm-12 col-12">
-          <a><h2>IRONMAN</h2></a>
+          <a><h2>SEARCH I AM</h2></a>
           <hr/>
           	<h3 class="border border-secondary" > Rating : 4.5 / 5</h3>
 	          <p style="text-align: left">
@@ -71,7 +71,10 @@ pageEncoding="ISO-8859-1"%>
 		
 		
 	<%
-		ArrayList <MoviesModelClass> list = SelectAllData.getAllMovies();
+		String name = request.getParameter("search");
+		System.out.print("Name : " + name );
+		
+		ArrayList <MoviesModelClass> list = SelectAllData.getMoviesByName(name); 
 	
 		for(MoviesModelClass pojo : list){%>
 			
@@ -79,8 +82,8 @@ pageEncoding="ISO-8859-1"%>
 		    <div class="card mb-3 moviecard" >
 			  <div class="row g-0">
 			    <div class="col-md-4">
-				    <a href=review.jsp?id=<%=pojo.getMovie_Id()%> style="text-decoration : none">
-				      <img src="imgs/movie_posters/<%=pojo.getImage()%>"
+				    <a href=review.jsp?id=<%=pojo.getMovie_Id() %> style="text-decoration : none">
+				      <img src="imgs/movie_posters/<%=pojo.getImage() %>"
 				       class="card-img-top img-fluid rounded-start" alt="<%= pojo.getMovie_Name() %>">
 				    </a>
 			    </div>

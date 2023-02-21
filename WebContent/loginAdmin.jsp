@@ -28,7 +28,7 @@
 		pass = Password;
 	}
 %>
-<div class="vh-100 admin-bg-image">
+
   <div class=" d-flex align-items-center h-100 gradient-custom-3">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -50,7 +50,7 @@
 
                 <div class="d-flex justify-content-center">
                   <button type="submit"
-                    class="btn btn-outline-secondary btn-block btn-lg gradient-custom-4 text-body">Login</button>
+                    class="btn loginbtn btn-outline-secondary btn-block btn-lg gradient-custom-4 text-body">Login</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Not having an account? <a href="admin.jsp"
@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-</div>
+
 </section>
 
 <section>
