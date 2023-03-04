@@ -44,7 +44,7 @@ if(Email!=null && Password!=null){
 	
 	if(status>0){%>
 	
-	<<jsp:forward page="addMovieImage.jsp">
+	<jsp:forward page="addMovieImage.jsp">
 			<jsp:param value="<%=movie_Name%>" name="Movie_Name"/>
 			<jsp:param value="<%=release_Date%>" name="Release_Date"/>
 		</jsp:forward>

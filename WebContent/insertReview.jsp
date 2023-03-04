@@ -2,6 +2,7 @@
 <%@page import="MyDao.InsertReview"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ page errorPage="error.jsp" %>  
 
 <%
 	String id1 = request.getParameter("movie_Id");

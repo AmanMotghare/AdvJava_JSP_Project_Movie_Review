@@ -41,9 +41,12 @@ public class AddImage extends HttpServlet {
 		System.out.println(file);
 		
 		String imageFileName=getSubmittedFileName(file);
-		System.out.println("Selected Image File Name : "+ imageFileName);
+		
+		//System.out.println("Selected Image File Name : "+ imageFileName);
+		
 		String uploadPath="D:/JAVAPROJECT/JSP_PROJECT/WebContent/imgs/movie_posters/"+imageFileName;
-		System.out.println("Upload Path : "+uploadPath);
+		
+		//System.out.println("Upload Path : "+uploadPath);
 		
 		//Uploading Image to a folder
 		

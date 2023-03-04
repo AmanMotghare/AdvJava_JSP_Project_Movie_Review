@@ -93,7 +93,11 @@ pageEncoding="ISO-8859-1"%>
 			        Director : <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getDirector_Name() %>" style="text-decoration : none"><%= pojo.getDirector_Name() %></a>
 			        </p>
 			        <hr>
+			        <p class="card-text" style="text-align: center">
+			        <b>CRITIQUE IT! </b>
+			        </p><hr>
 			      </div>
+			      
 			    </div>
 			  </div>
 			</div>

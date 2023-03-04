@@ -1,4 +1,5 @@
 
+<%@page import="java.util.ArrayList"%>
 <%@page import="MyPojo.ReviewsModelClass"%>
 <%@page import="MyDao.SelectAllData"%>
 <%@page import="MyPojo.MoviesModelClass"%>
@@ -26,8 +27,10 @@ pageEncoding="ISO-8859-1"%>
       
       String my_id = request.getParameter("id");
       System.out.print("Review page id string: "+my_id);
+      
       int id = Integer.parseInt(my_id);
       System.out.print("Review page id int: "+id);
+      
       MoviesModelClass pojo = SelectAllData.getMovieDetailsById(id);
 
       %>
@@ -161,41 +164,47 @@ pageEncoding="ISO-8859-1"%>
 
 
 <section>
-
-	<% ReviewsModelClass ReviewPojo = new ReviewsModelClass(); %>
-
 	<div class="container row row-cols-1 row-cols-md-2 g-4">
+	<% ArrayList <ReviewsModelClass> list = SelectAllData.getReviewsById(id);
+	    		
+	 for(ReviewsModelClass ReviewPojo : list ){ %>
+		 
 	  
 	      <div class="col">
 		    <div class="card mb-3 moviecard">
 			  <div class="card-body">
-			    <h5>More Details </h5><hr>
-			    	<p class="card-text text-muted" style="text-align: left">
-			        <b>Cast :</b>
-			        <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getActor_Name()%>" style="text-decoration : none"><%= pojo.getActor_Name()%></a> ||
-			        <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getSupporting_Actor()%>" style="text-decoration : none"><%= pojo.getSupporting_Actor()%></a> ||
-			        <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getActress_name()%>" style="text-decoration : none"><%= pojo.getActress_name()%></a>
-			        <hr>
-			        
-			        <p class="card-text text-muted" style="text-align: left">
-			        <b>Genre : </b><%= pojo.getGenre()%>
+			    <h5><%=ReviewPojo.getReviewer_Name()%> </h5> (<%=ReviewPojo.getUser_Rating()%>/5)<hr>
+			    
+			    <p class="card-text " style="text-align: left">
+			        <b>Movie Name : <%=ReviewPojo.getMovie_Name()%></b>
 			        </p>
 			        <hr>
 			        
-			        <p class="card-text text-muted" style="text-align: left">
-			        <b>Release Date :</b> <%= pojo.getRelease_Date()%>
+			        <p class="card-text" style="text-align: left">
+			        <b>Review Headline : </b><%=ReviewPojo.getReview_Headline()%>
 			        </p>
-			        <hr>
-			        
-			        <p class="card-text" style="text-align: center">
-			        Welcome to <b>CRITIQUE IT!</b>, Your Review is Important.
+			       <hr>
+			    
+			    	<p class="card-text" style="text-align: left">
+			        <b>User Review : </b><%=ReviewPojo.getReview()%>
 			        </p>
-			        <hr>
+			       <hr>
+			       
+			       <p class="card-text" style="text-align: center">
+			        <b>CRITIQUE IT! </b>
+			        </p>
+			                
 			  </div>
 			</div>
 	      </div>
 	      
-	</div>
+	 <% }
+	 %>
+	 
+	 
+	
+</div>
+	
 
 </section>
 

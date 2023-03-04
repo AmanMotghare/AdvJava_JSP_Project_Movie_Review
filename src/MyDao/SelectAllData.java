@@ -17,6 +17,8 @@ public class SelectAllData {
 	private static final String select_details_Id = "select * from movies where id=? ";
 	private static final String select_details_Name = "select * from movies where MOVIE_NAME=? ";
 	private static final String select_reviews_query = "select * from reviews";
+	private static final String select_reviews_Id = "select * from reviews where id=?";
+	
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	public static AdminModelClass getAdminDetails(String email, String password){
 		
@@ -202,6 +204,48 @@ public static ArrayList<ReviewsModelClass> getAllReviews(){
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	
+	return list;
+	
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+public static ArrayList<ReviewsModelClass> getReviewsById(int id){
+	
+	ArrayList<ReviewsModelClass> list = new ArrayList<ReviewsModelClass>();
+	
+	try {
+		Connection con = GetConnection.Connect();
+		
+		PreparedStatement ps = con.prepareStatement(select_reviews_Id);
+		ps.setInt(1, id);
+		
+		ResultSet rs = ps.executeQuery();
+		
+		while(rs.next()){
+			
+			ReviewsModelClass pojo = new ReviewsModelClass();
+			
+			pojo.setMovie_id(rs.getInt(1));
+			pojo.setMovie_Name(rs.getString(2));
+			pojo.setReviewer_Name(rs.getString(3));
+			pojo.setReview_Headline(rs.getString(4));
+			pojo.setReview(rs.getString(5));
+			pojo.setUser_Rating(rs.getFloat(6));
+			
+			
+			list.add(pojo);
+			
+		}
+		con.close();
+		
+	} catch (ClassNotFoundException | SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
 	
 	return list;
 	
