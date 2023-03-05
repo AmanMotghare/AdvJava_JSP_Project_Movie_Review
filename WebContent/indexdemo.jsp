@@ -13,14 +13,11 @@ pageEncoding="ISO-8859-1"%>
 <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
-integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
 <!-- MDB -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
@@ -30,25 +27,37 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <body class="container">
 
 <jsp:include page="navbar.jsp"></jsp:include>
-<h3><b><em>Movie of the Month : Avengers Infinity War</em></b></h3>
-<hr>
+
 <section>
 
-	<div class="card mb-3">
-	  	<div class="embed-responsive embed-responsive-21by9">
-		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6ZfuNTqbHE8?autoplay=1&mute=1&loop=1" ></iframe>
-		</div>
-	  <div class="card-body">
-	    <h5 class="card-title">Avengers Endgame</h5>
-	    <p class="card-text">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. 
-	    With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
-	    
-	  </div>
-	  <div class="card-footer">
-				<small class="text-muted"><b>CRITIQUE IT! </b></small>
-				</div>
-	</div>
-
+	<div class="container text-center main">
+      <div class="row">
+      
+        <div class="col">
+	        <div class ="container text-center ">
+	          <img
+	            src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/80C64C0B63382CD3ED2653356125F275F63D036028A77D38DC3286AD851A6833/scale?width=506&aspectRatio=2.00&format=jpeg"
+	            class="rounded mx-auto d-block img-fluid  poster"
+	            alt="..."
+	          />
+	         </div>
+        </div>
+        
+        <div class="col col-md-8 col-sm-12 col-12">
+          <a><h2>IRONMAN</h2></a>
+          <hr/>
+          	<h3 class="border border-secondary" > Rating : 4.5 / 5</h3>
+	          <p style="text-align: left">
+	            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+	             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+	             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+	             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	             proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	          </p>
+        </div>
+     
+      </div>
+    </div>
 
 </section>
 
@@ -62,7 +71,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 
 <div class ="container text-center">
 <h3>Now Playing</h3><br>
-	<div class="row row-cols-1 row-cols-md-3 g-4">
+	<div class="row row-cols-3 row-cols-md-3 g-4">
 	<%
 		ArrayList <MoviesModelClass> list = SelectAllData.getAllMovies();
 	
@@ -71,7 +80,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 		<div class="col">
 			<div class="card h-100">
 				<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-				    <img src="imgs/movie_posters/<%=pojo.getImage()%>" class="img-fluid" alt="<%= pojo.getMovie_Name() %>"/>
+				    <img src="imgs/movie_posters/<%=pojo.getImage()%>" alt="<%= pojo.getMovie_Name() %>" class="img-fluid" />
 				    <a href="review.jsp?id=<%=pojo.getMovie_Id()%>">
 				      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 				    </a>

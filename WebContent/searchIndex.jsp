@@ -18,7 +18,11 @@ pageEncoding="ISO-8859-1"%>
 <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
 </head>
 <body class="container">
 
@@ -79,28 +83,27 @@ pageEncoding="ISO-8859-1"%>
 		for(MoviesModelClass pojo : list){%>
 			
 			<div class="col">
-		    <div class="card mb-3 moviecard" >
-			  <div class="row g-0">
-			    <div class="col-md-4">
-				    <a href=review.jsp?id=<%=pojo.getMovie_Id() %> style="text-decoration : none">
-				      <img src="imgs/movie_posters/<%=pojo.getImage() %>"
-				       class="card-img-top img-fluid rounded-start" alt="<%= pojo.getMovie_Name() %>">
+			<div class="card h-100">
+				<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+				    <img src="imgs/movie_posters/<%=pojo.getImage()%>" alt="<%= pojo.getMovie_Name() %>" class="img-fluid" />
+				    <a href="review.jsp?id=<%=pojo.getMovie_Id()%>">
+				      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 				    </a>
-			    </div>
-			    <div class="col-md-8">
-			      <div class="card-body">
-			        <h5 class="card-title"><%= pojo.getMovie_Name() %></h5><hr>
+				  </div>
+				<div class="card-body">
+				<h5 class="card-title"><%= pojo.getMovie_Name() %></h5><hr>
 			        <p class="card-text" style="text-align: left"><h5 class="text-muted"><%= pojo.getRatings()%>/5</h5></p><hr>
 			        <p class="card-text" style="text-align: left"><%= pojo.getDescription() %></p>
 			        <p class="card-text text-muted" style="text-align: left">
 			        Director : <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getDirector_Name() %>" style="text-decoration : none"><%= pojo.getDirector_Name() %></a>
 			        </p>
-			        <hr>
-			      </div>
-			    </div>
-			  </div>
+				</div>
+				
+				<div class="card-footer">
+				<small class="text-muted"><b>CRITIQUE IT! </b></small>
+				</div>
 			</div>
-	      </div>
+		</div>
 		<%}%>	
 
 	</div>

@@ -59,9 +59,10 @@ hr.new5 {
 	height: 50%;
 	width: 30%;
 }
-
-.card-img-top {
-    width: 60vh;
-    height: 43vh;
-    object-fit: cover;
+p{
+	text-align: justify;
+	text-justify: inter-word;
 }
+
+
+ 

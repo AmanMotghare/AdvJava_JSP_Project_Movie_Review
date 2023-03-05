@@ -41,30 +41,29 @@ pageEncoding="ISO-8859-1"%>
 <section>
 
 	<div class="container row row-cols-1 row-cols-md-2 g-4">
-			
-			<div class="col">
-		    <div class="card mb-3 moviecard" >
-			  <div class="row g-0">
-			    <div class="col-md-4">
-				    <a href=review.jsp?id=<%=pojo.getMovie_Id() %> style="text-decoration : none">
-				      <img src="imgs/movie_posters/<%=pojo.getImage() %>"
-				       class="card-img-top img-fluid rounded-start" alt="<%= pojo.getMovie_Name() %>">
+	
+	<div class="col">
+			<div class="card h-100">
+				<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+				    <img src="imgs/movie_posters/<%=pojo.getImage()%>" class="img-fluid" alt="<%= pojo.getMovie_Name() %>"/>
+				    <a href="review.jsp?id=<%=pojo.getMovie_Id()%>">
+				      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 				    </a>
-			    </div>
-			    <div class="col-md-8">
-			      <div class="card-body">
-			        <h5 class="card-title"><%= pojo.getMovie_Name() %></h5><hr>
+				  </div>
+				<div class="card-body">
+				<h5 class="card-title"><%= pojo.getMovie_Name() %></h5><hr>
 			        <p class="card-text" style="text-align: left"><h5 class="text-muted"><%= pojo.getRatings()%>/5</h5></p><hr>
 			        <p class="card-text" style="text-align: left"><%= pojo.getDescription() %></p>
 			        <p class="card-text text-muted" style="text-align: left">
 			        Director : <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getDirector_Name() %>" style="text-decoration : none"><%= pojo.getDirector_Name() %></a>
 			        </p>
-			        <hr>
-			      </div>
-			    </div>
-			  </div>
+				</div>
+				
+				<div class="card-footer">
+				<small class="text-muted"><b>CRITIQUE IT! </b></small>
+				</div>
 			</div>
-	      </div>
+		 </div>
 	      
 	      <div class="col">
 		    <div class="card mb-3 moviecard">
@@ -95,6 +94,7 @@ pageEncoding="ISO-8859-1"%>
 	</div>
 
 </section>
+
 <hr>
 <div class="">
 	<h4 style="color: #7D6608 ;" align="center">Review and share your thoughts about <%=pojo.getMovie_Name() %></h4>
@@ -171,9 +171,9 @@ pageEncoding="ISO-8859-1"%>
 		 
 	  
 	      <div class="col">
-		    <div class="card mb-3 moviecard">
-			  <div class="card-body">
-			    <h5><%=ReviewPojo.getReviewer_Name()%> </h5> (<%=ReviewPojo.getUser_Rating()%>/5)<hr>
+			<div class="card h-100">
+				<div class="card-body">
+				<h5><%=ReviewPojo.getReviewer_Name()%> </h5> (<%=ReviewPojo.getUser_Rating()%>/5)<hr>
 			    
 			    <p class="card-text " style="text-align: left">
 			        <b>Movie Name : <%=ReviewPojo.getMovie_Name()%></b>
@@ -189,14 +189,13 @@ pageEncoding="ISO-8859-1"%>
 			        <b>User Review : </b><%=ReviewPojo.getReview()%>
 			        </p>
 			       <hr>
-			       
-			       <p class="card-text" style="text-align: center">
-			        <b>CRITIQUE IT! </b>
-			        </p>
-			                
-			  </div>
+				</div>
+				
+				<div class="card-footer">
+				<small class="text-muted"><b>CRITIQUE IT! </b></small>
+				</div>
 			</div>
-	      </div>
+		</div>
 	      
 	 <% }
 	 %>
@@ -209,6 +208,6 @@ pageEncoding="ISO-8859-1"%>
 </section>
 
 <jsp:include page="footer.jsp"></jsp:include>
-
+		
 </body>
 </html>

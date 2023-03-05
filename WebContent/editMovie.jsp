@@ -17,6 +17,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
 <title>Update Movie || Admin</title>
 </head>
 <body class="container">

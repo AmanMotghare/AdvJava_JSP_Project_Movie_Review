@@ -40,6 +40,8 @@ String Release_Date = request.getParameter("Release_Date");
 	 <br>
 
 	</form>
+	
+	<button type="button" class="btn btn-outline-dark">Go Back</button>
 
 <jsp:include page="footer.jsp"></jsp:include>
 
