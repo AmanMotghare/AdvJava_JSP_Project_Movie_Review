@@ -1,4 +1,5 @@
 
+<%@page import="MyDao.movieUpdate"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="MyPojo.ReviewsModelClass"%>
 <%@page import="MyDao.SelectAllData"%>
@@ -31,8 +32,10 @@ pageEncoding="ISO-8859-1"%>
       int id = Integer.parseInt(my_id);
       System.out.print("Review page id int: "+id);
       
+      movieUpdate.getReviewAvg(id);
+      
       MoviesModelClass pojo = SelectAllData.getMovieDetailsById(id);
-
+	  
       %>
 <body class="container">
 

@@ -235,7 +235,6 @@ public static ArrayList<ReviewsModelClass> getReviewsById(int id){
 			pojo.setReview(rs.getString(5));
 			pojo.setUser_Rating(rs.getFloat(6));
 			
-			
 			list.add(pojo);
 			
 		}

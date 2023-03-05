@@ -13,6 +13,8 @@ if(Email!=null && Password!=null){
 	String id1 = request.getParameter("id");
 	
 	int movie_Id = Integer.parseInt(id1);
+	
+	
 	String movie_Name = request.getParameter("movie_name");
 	String release_Date = request.getParameter("release_date");
 	String director_name = request.getParameter("director_name");
