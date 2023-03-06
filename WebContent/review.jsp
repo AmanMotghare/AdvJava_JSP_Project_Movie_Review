@@ -17,6 +17,9 @@ pageEncoding="ISO-8859-1"%>
 <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="WebContent/imgs/favicon/apple-touch-icon.pngg">
 <link rel="icon" type="image/png" sizes="32x32" href="WebContent/imgs/favicon/favicon-32x32.png">
@@ -45,13 +48,12 @@ pageEncoding="ISO-8859-1"%>
 
 	<div class="container row row-cols-1 row-cols-md-2 g-4">
 	
-	<div class="col">
+		<div class="col">
 			<div class="card h-100">
 				<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-				    <img src="imgs/movie_posters/<%=pojo.getImage()%>" class="img-fluid" alt="<%= pojo.getMovie_Name() %>"/>
-				    <a href="review.jsp?id=<%=pojo.getMovie_Id()%>">
-				      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-				    </a>
+				    <div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<%=pojo.getTrailerID()%>?autoplay=1&loop=1&mute=1" ></iframe>
+					</div>
 				  </div>
 				<div class="card-body">
 				<h5 class="card-title"><%= pojo.getMovie_Name() %></h5><hr>
@@ -63,15 +65,21 @@ pageEncoding="ISO-8859-1"%>
 				</div>
 				
 				<div class="card-footer">
-				<small class="text-muted"><b>CRITIQUE IT! </b></small>
+				<small class="text-muted">Welcome to <b>CRITIQUE IT!</b> Your Review is Important:)</small>
 				</div>
 			</div>
 		 </div>
 	      
 	      <div class="col">
-		    <div class="card mb-3 moviecard">
-			  <div class="card-body">
-			    <h5>More Details </h5><hr>
+			<div class="card h-100">
+				<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+				    <img src="imgs/movie_posters/<%=pojo.getImage()%>" class="img-fluid" alt="<%= pojo.getMovie_Name() %>"/>
+				    <a href="review.jsp?id=<%=pojo.getMovie_Id()%>">
+				      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+				    </a>
+				  </div>
+				<div class="card-body">
+				 <h5>More Details </h5><hr>
 			    	<p class="card-text text-muted" style="text-align: left">
 			        <b>Cast :</b>
 			        <a href="https://www.google.com/search?client=firefox-b-d&q=<%= pojo.getActor_Name()%>" style="text-decoration : none"><%= pojo.getActor_Name()%></a> ||
@@ -85,14 +93,13 @@ pageEncoding="ISO-8859-1"%>
 			        <p class="card-text text-muted" style="text-align: left">
 			        <b>Release Date :</b> <%= pojo.getRelease_Date()%>
 			        </p>
-			        <hr>
-			        <p class="card-text" style="text-align: center">
-			        Welcome to <b>CRITIQUE IT!</b>, Your Review is Important.
-			        </p>
-			        <hr>
 			  </div>
-			</div>
-	      </div>
+			  	<div class="card-footer">
+					<small class="text-muted" style="text-align: center"><b>CRITIQUE IT!</b></small>
+				</div>
+		 </div>
+	      
+	      
 	      
 	</div>
 

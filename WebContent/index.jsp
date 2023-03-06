@@ -44,9 +44,9 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 	    With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
 	    
 	  </div>
-	  <div class="card-footer">
-				<small class="text-muted"><b>CRITIQUE IT! </b></small>
-				</div>
+	  	<div class="card-footer" style="text-align:center">
+			<small class="text-muted" >Welcome to <b>CRITIQUE IT!</b> Your Review is Important:)</small>
+		</div>
 	</div>
 
 

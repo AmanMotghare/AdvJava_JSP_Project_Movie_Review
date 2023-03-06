@@ -77,21 +77,24 @@ if(Email!=null && Password!=null){
 	    <input type="date" name="release_date" class="form-control" placeholder="Release Date " required>
 	  </div>
 	  
-	  <div class="input-group">
+	  <div class="input-group ">
 		 <span class="input-group-text">Movie Description</span>
 		 <textarea class="form-control" name="description"  aria-label="With textarea" required></textarea>
 	  </div>
 	  
+	  <div class="col-md-3">
+	    <input type="text" class="form-control" name="trailerID"  placeholder="Trailer Id" required>
+	  </div>
 	  
-	  <div class="col-md-4">
+	  <div class="col-md-3">
 	    <input type="text" class="form-control" name="actor"  placeholder="Actor Name" required>
 	  </div>
 	  
-	  <div class="col-md-4">
+	  <div class="col-md-3">
 	    <input type="text" class="form-control" name="actress"  placeholder="Actress Name" required>
 	  </div>
 	  
-	  <div class="col-md-4">
+	  <div class="col-md-3">
 	    <input type="text" class="form-control" name="support_actor"  placeholder="Supporting Actor Name" required>
 	  </div>
 	   

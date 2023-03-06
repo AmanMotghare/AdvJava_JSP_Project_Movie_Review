@@ -11,7 +11,7 @@ public class AdminInsert {
 	
 	private static final String Insert_Query ="INSERT INTO ADMIN (NAME,EMAIL,PASSWORD) VALUES (?,?,?)";
 	
-	private static final String Insert_movies_query ="INSERT INTO MOVIES (MOVIE_NAME, DIRECTOR, GENRE, RELEASE_DATE, DESCRIPTION, ACTOR_NAME, ACTRESS_NAME ,SUPPORTING_ACTOR ) VALUES (?,?,?,?,?,?,?,?)";
+	private static final String Insert_movies_query ="INSERT INTO MOVIES (MOVIE_NAME, DIRECTOR, GENRE, RELEASE_DATE, DESCRIPTION, ACTOR_NAME, ACTRESS_NAME ,SUPPORTING_ACTOR, TRAILERID ) VALUES (?,?,?,?,?,?,?,?,?)";
 
 	
 	public static int Insert(AdminModelClass pojo){
@@ -59,6 +59,7 @@ public class AdminInsert {
 			ps.setString(6, pojo.getActor_Name());
 			ps.setString(7, pojo.getActress_name());
 			ps.setString(8, pojo.getSupporting_Actor());
+			ps.setString(9, pojo.getTrailerID());
 			
 			status = ps.executeUpdate();
 			

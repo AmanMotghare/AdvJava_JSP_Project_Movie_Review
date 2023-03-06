@@ -77,6 +77,7 @@ public class SelectAllData {
 				pojo.setSupporting_Actor(rs.getString(9));
 				pojo.setImage(rs.getString(10));
 				pojo.setRatings(rs.getFloat(11));
+				pojo.setTrailerID(rs.getString(12));
 				
 				list.add(pojo);
 				
@@ -116,6 +117,7 @@ public class SelectAllData {
 				pojo.setSupporting_Actor(rs.getString(9));
 				pojo.setImage(rs.getString(10));
 				pojo.setRatings(rs.getFloat(11));
+				pojo.setTrailerID(rs.getString(12));
 				
 			}
 			con.close();
@@ -159,6 +161,7 @@ public static ArrayList<MoviesModelClass> getMoviesByName(String Name){
 				pojo.setSupporting_Actor(rs.getString(9));
 				pojo.setImage(rs.getString(10));
 				pojo.setRatings(rs.getFloat(11));
+				pojo.setTrailerID(rs.getString(12));
 				
 				list.add(pojo);
 				

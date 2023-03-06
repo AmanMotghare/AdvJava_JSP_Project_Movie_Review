@@ -13,6 +13,7 @@ public class MoviesModelClass {
 	private String supporting_Actor;
 	private String image;
 	private float ratings;
+	private String trailerID;
 	
 	public int getMovie_Id() {
 		return movie_Id;
@@ -79,6 +80,12 @@ public class MoviesModelClass {
 	}
 	public void setRatings(float ratings) {
 		this.ratings = ratings;
+	}
+	public String getTrailerID() {
+		return trailerID;
+	}
+	public void setTrailerID(String trailerID) {
+		this.trailerID = trailerID;
 	}
 	
 	

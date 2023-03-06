@@ -18,7 +18,8 @@ if(Email!=null && Password!=null){
 	String actor = request.getParameter("actor");
 	String actress = request.getParameter("actress");
 	String support_actor = request.getParameter("support_actor");
-
+	String trailerID = request.getParameter("trailerID");
+	System.out.print(trailerID +" trailer id");
 	MoviesModelClass pojo = new MoviesModelClass();
 
 	pojo.setMovie_Name(Movie_Name);
@@ -29,6 +30,7 @@ if(Email!=null && Password!=null){
 	pojo.setActor_Name(actor);
 	pojo.setActress_name(actress);
 	pojo.setSupporting_Actor(support_actor);
+	pojo.setTrailerID(trailerID);
 
 	int status = AdminInsert.InsertMoviesAdmin(pojo);
 

@@ -8,7 +8,6 @@
 <title>Navbar</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -41,15 +40,15 @@
 <ul class="nav justify-content-center ">
 
   <li class="nav-item ">
-    <a class="nav-link menu" href="greatMovies.jsp">Great Movies</a>
+    <a class="nav-link menu" href="#">Great Movies</a>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link menu" href="moviesreview.jsp">Movie Reviews</a>
+    <a class="nav-link menu" href="profileAdmin.jsp">Admin Profile</a>
   </li>
   
   <li class="nav-item">
-    <a class="nav-link menu" href="tvseriesreview.jsp">TV / Streaming Reviews</a>
+    <a class="nav-link menu" href="#">TV / Streaming Reviews</a>
   </li>
 
 </ul>
