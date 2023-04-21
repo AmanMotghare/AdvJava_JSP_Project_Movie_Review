@@ -31,6 +31,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 
 <jsp:include page="navbar.jsp"></jsp:include>
 <h3><b><em>Movie of the Month : Avengers Infinity War</em></b></h3>
+
 <hr>
 <section>
 
@@ -95,7 +96,13 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 	</div>	
 </div>
 </section>
-
+<hr>
+<section>
+<div class ="container">
+	<a href="http://client.googiehost.com/aff.php?aff=11630">
+	<img src="https://googiehost.com/banner/728_90_1.gif" style="height:90px;width:728px;" border="0" alt="Free Hosting" /></a>
+</div>
+</section>
 <jsp:include page="footer.jsp"></jsp:include>
 
 </body>
