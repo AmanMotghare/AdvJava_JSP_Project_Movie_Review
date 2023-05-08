@@ -26,7 +26,12 @@ The user module allows users to search for movies and leave reviews, while the a
 
 ### Register and Log-In Page for Administrators .
 
-![image](https://user-images.githubusercontent.com/115368249/236809681-2c0def12-e07a-451f-8f2a-98cc20a674b5.png)
-
-
 ![image](https://user-images.githubusercontent.com/115368249/236809425-24db8c32-11e5-46d4-bf8e-38ad33ff8ea2.png)
+
+### Admin Profile Page.
+
+![image](https://user-images.githubusercontent.com/115368249/236810034-b2d8601c-5c2c-4c50-a59b-3e8ac232987e.png)
+
+# Credits :
+
+##This website is created by Aman Motghare.
