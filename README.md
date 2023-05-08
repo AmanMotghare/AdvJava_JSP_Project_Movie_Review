@@ -17,7 +17,7 @@ The user module allows users to search for movies and leave reviews, while the a
 
 ![image](https://user-images.githubusercontent.com/115368249/236808176-6277e36d-9201-4f8c-b625-e597762d2731.png)
 
-![image](https://user-images.githubusercontent.com/115368249/236808470-5407807c-d39b-4ac1-81ff-92c4da18c8ac.png)
+![image](https://user-images.githubusercontent.com/115368249/236810548-f3aa5536-e20f-4030-afa9-1748ba493696.png)
 
 
 ### Page where user can add their reviews.
@@ -34,4 +34,4 @@ The user module allows users to search for movies and leave reviews, while the a
 
 # Credits :
 
-##This website is created by Aman Motghare.
+## This website is created by Aman Motghare.
